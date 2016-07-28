@@ -14,7 +14,7 @@ namespace TestApp.Controllers
 {
     public class ImagesForTestsController : ApiController
     {
-        private ImageDB db = new ImageDB();
+        private TestImageDB db = new TestImageDB();
 
         // GET: api/ImagesForTests
         public IQueryable<ImagesForTest> GetImagesForTests()

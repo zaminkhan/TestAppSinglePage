@@ -5,17 +5,13 @@
                 <th>Title</th>
                 <th>Description</th>
                 <th>Image</th>
-                <th>View</th>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="tst in ImagesForTests">
                 <td>{{tst.Title}}</td>
                 <td>{{tst.description}}</td>
-                <td><img ng-src="data:image/png;base64,{{tst.image}}" /></td>
-                <td>
-                    <a href="#/details/{{tst.Id}}" class="btn btn-default btn-sm">Details</a>
-                </td>  
+                <td><a href="#/details/{{tst.Id}}"><img ng-src="data:image/png;base64,{{tst.image}}" /></a></td> 
             </tr>
         </tbody>
     </table>

@@ -9,7 +9,7 @@ namespace TestApp.Migrations
     using System.Net;
     using TestApp.DAL;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<TestApp.DAL.ImageDB>
+    internal sealed class Configuration : DbMigrationsConfiguration<TestApp.DAL.TestImageDB>
     {
         public Configuration()
         {
@@ -26,7 +26,7 @@ namespace TestApp.Migrations
             return bytes;
         }
 
-        protected override void Seed(TestApp.DAL.ImageDB context)
+        protected override void Seed(TestApp.DAL.TestImageDB context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -6,12 +6,12 @@ using System.Web;
 
 namespace TestApp.DAL
 {
-    public class ImageDB: DbContext
+    public class TestImageDB: DbContext
     {
-        public ImageDB()
+        public TestImageDB()
             : base("DefaultConnection") 
     {
-        Database.SetInitializer(new MigrateDatabaseToLatestVersion<ImageDB, TestApp.Migrations.Configuration>("DefaultConnection"));
+        Database.SetInitializer(new MigrateDatabaseToLatestVersion<TestImageDB, TestApp.Migrations.Configuration>("DefaultConnection"));
             
     }
         public DbSet<ImagesForTest> ImagesForTests { get; set; }
