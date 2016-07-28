@@ -1,0 +1,22 @@
+﻿<div ng-controller="DetailsController">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>back</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ImagesForTest.Title}}</td>
+                <td>{{ImagesForTest.description}}</td>
+                <td><img data-ng-src="data:image/png;base64,{{ImagesForTest.image}}"/></td>
+                <td>
+                    <a href="#/home" class="btn btn-default btn-sm">home</a>
+                </td>  
+            </tr>
+        </tbody>
+    </table>
+</div>
